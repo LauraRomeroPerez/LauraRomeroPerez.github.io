@@ -1,14 +1,83 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title>CSS Propiedades de texto Laura Romero</title>
+			<style>
+				#familiagenerica{
+       	 	font-family: sans-serif;
+      	 	}
+	  	 		#fuenteespecifica{
+   		 	font-family: "Calibri";
+			}
+				#tamañopx{
+    			font-size: 20px;
+			}
+				#tamañoem{
+    			font-size: 2em;
+			}
+				#estilodefuente{
+    			font-style:italic;
+			}	
+				#altura{
+    			line-height:45px;
+			}
+				#alinear{
+    		text-align:center;
+			}		
+				#subrayar{
+    			text-decoration:underline;
+			}
+				#tachar{
+    			text-decoration:line-through;
+			}
+				#dessubrayar{
+    			text-decoration:none;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS PROPIEDADES DE TEXTO</h1>
+		<h2>Laura Romero Pérez</h2>
+		<p>Actualizado el 26 de noviembre</p>
+		<h2>FUENTE GENÉRICA DE FAMILIA</h2>	
+		<p>Se refiera a una fuente de texto general, por ejemplo sans-serif o serif. Se aplica con el comando font-family seguido de dos puntos y el nombre de la fuente general.<br> 
+		Son las más utilizadas, ya que si un dispositivo utiliza la página web y no tiene una fuente específica no le va a aparecer.</p>
+		<p id="familiagenerica">Por ejemplo, este párrafo esta escrito con sans-serif.</p>
 	
-	<style>
+		<h2>FUENTE ESPECÍFICA DE FAMILIA</h2>
+		<p>Se aplica usando la propiedad font-family seguido de dos puntos y el nombre de la fuente específica entre comillas.</p>
+		<p id="fuenteespecifica">Por ejemplo esto esta escrito con la fuente especifica Calibri.</p>
+
+		<h2>TAMAÑO DE LETRA CON px</h2>
+		<p>Se puede cambiar el tamaño de la letra utilizando el comando font-size seguido del número de píxeles y  de "px".</p> 
+		<p id="tamañopx">Por ejemplo, este párrafo tiene una letra de 20px de tamaño.</p>
+
+		<h2>TAMAÑO DE LETRA CON em</h2>
+		<p>Se puede cambiar el tamaño de la letra con una proporción, usando la propiedad font-size y después poniendo la proporción deseada, seguida de "em".<br>
+		Esto está bien para manterer la proporción entre enunciados.</p>
+		<p id="tamañoem">Por ejemplo, la letra de este párrafo es 2 veces mayor al tamaño predeterminado.</p>
 		
-	</style>
-</head>
-<body>
+		<h2>ESTILO DE FUENTE</h2>
+		<p>Se puede cambiar el estilo de fuente con el comando font-style seguido del estilo con el que se quiere estilizar el texto.</p>
+		<p id="estilodefuente">Por ejemplo, este párrafo esta escrito con Italic, lo que hace que este en cursiva.</p>
+
+		<h2>ALTURA ENTRE LÍNEAS</h2>
+		<p>La altura entre líneas se puede cambiar con el comando line-height, seguido del número de píxeles que quieres que haya entre líneas, seguido de "px".</p>
+		<p id="altura">Por ejemplo, la altura entre líneas de este párrafo es de 45px.</p>
+		
+		<h2>ALINEACIÓN DE TEXTOS</h2>
+		<p>Se pueden alinear los textos usando el comando text-align. Para que este alineado a la derecha se utiliza el comando text-align, seguido de dos puntos y de "right";<br> 
+		para que este alineado en el centro, se utiliza el mismo comando, pero seguido de dos puntos y "centre"</p>
+		<p id="alinear">Por ejemplo, este párrafo está alineado en el centro de la página web, mientras que los otros vienen predeterminadamente a la izquierda.</p>
 	
-</body>
+		<h2>DECORACIÓN DE TEXTO</h2>
+		<p>Se puede decorar el texto de diversas maneras, tachando un texto, subrayando o quitando el subrayado de los enlaces. 
+		Esto se hace usando "text-decoration", seguido de la función que quieras.<br> Por ejemplo:</p>
+		<p id="subrayar">Esto esta subrayado, "text-decoration" va seguido de "underline".</p>
+		<p id="tachar">Esto esta tachado, "text-decoration" va seguido de "line-through".</p>
+		<p>A este enlace se le ha quitado el subrayado: <a id="dessubrayar" href="index.html">Volver a inicio</a>, "text-decoration" va seguido de "none"</p>
+
+		<h2>Laura Romero Pérez</h2>
+	</body>
 </html>
