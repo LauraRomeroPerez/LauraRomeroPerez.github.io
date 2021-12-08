@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-		<title>Diseño CSS</title>
+		<title>Diseño CSS Laura ROmero</title>
 
 		<style>
 		 #a {
@@ -18,13 +18,19 @@
             border: ridge rgb(0, 0, 0) 1px;
             margin: 10px;
             padding: 7px
-         }
+		 }
+		 .pelota{
+		    float:left	
+		 }
+		 .balon{
+		    clear: both;
+		 }
 		</style>
 	</head>
 	<body>
 		<h1>DISEÑO CSS</h1>
 		<h2>Laura Romero Pérez</h2>
-		<p>Actualizado el 26 de noviembre</p>
+		<p>Actualizado el 8 de diciembre</p>
 
 		<h2>SPAN</h2>
 		<p>Sirve para estilizar con CSS una palabra o un conjunto de palabras. Se hace poniendo la etiqueta "span" y una id.<br>
@@ -53,6 +59,16 @@
          Esta imagen es un ejemplo del modelo de caja:
 		</p>
 		<img src="imagenes/modelodecaja.jpg" height="300">
+		
+		<h2>POSITIONING</h2>
+		<p>Estas propiedades están explicadas en el siguiente enlace: <a href=posiciones_css.html>Posiciones CSS</a></p>
+		
+		<h2>FLOAT y CLEAR</h2>
+		<p>La propiedad float, sirve para decirle al navegador, donde quieres colocar los diferentes elementos. Se hace poniendo dentro de style "float", seguido de dos puntos y de la posición deseada.<br> Por ejemplo,la imagen de la pelota, está situada en la parte izquierda de la página web, y el texto a la derecha.</p>
+		<p>La propiedad clear, se usa cuando no queremos que un elemento, se sitúe al lado de otro, que tiene la propiedad "float".</p>
+
+		<p class="pelota"><img src="imagenes/pelota.jpg" height="75"></p> <p>Balón de vóleibol:<br>El balón es esférico y flexible; 65-67 cm de circunferencia, 260-280 g de peso y presión interior de 0,3-0,325 kg/cm².<br>Es así más pequeño y ligero que los balones empleados en baloncesto o fútbol.<br> Puede estar hecho de varios materiales aunque el más cómodo y utilizado es el de cuero.</p>
+		<p class="balon"> Este texto está separado de la foto, garacias a la propiedad clear.</p>
 		
 		<h2>Laura Romero Pérez</h2>
 	</body>

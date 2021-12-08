@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title>Posiciones CSS Laura Romero</title>
+		<style>
+         #mano{
+			position: relative;
+            left:-10px;
+		 }
+		 #sol{
+			position: absolute;
+			left: 250px;
+			top: 560px;
+		 }
+		 #fija{
+			position: fixed;
+			top: 10px;
+            right:10px;
+		 }
+		 #imagen1{
+			position: absolute;
+			z-index: 1;
+			left: 10px;
+		 }
+		 #imagen2{
+			position: absolute;
+            z-index: 2;
+			left: 100px;
+		 }
+		 #imagen3{
+			position: absolute;
+            z-index: 3;
+			left: 300px;
+		 }
+		 #nombre {
+			position: absolute;
+			z-index: 4;
+			right: 500px;
+		 }
+		</style>
+
+	</head>
+	<body>
+		<h1>POSICIONES CSS</h1>
+		<h2>Laura Romero Pérez</h2>
+		<P>Actualizado el 8 de diciembre</p>
+
+		<h2>POSICIONES</h2>
+		<p>Los elementos de una página web se pueden colocar en diversas posiciones, para ello hay diferentes etiquetas que se ponen después de la propiedad "position".</p> 
+
+		<h3>RELATIVA</h3>
+		<p>Los elementos se posicionan en el sitio deseado de la pantalla, utilizando la etiqueta "relative", seguida de las etiquetas top, bottom, left, right...<br>Por ejemplo la imagen de la mano, esta situada a -10px a la izquierda, para que así parezca que el brazo aparece de la pantalla.</p>
+		<img id="mano" src="imagenes/mano.jpg" height="100">
+
+		<h3>ABSOLUTA</h3>
+		<p>Con esta posición los elementos con la etiqueta "absolute" se sitúan encima de los otros, impidiendo ver lo que hay debajo.<br>Por ejemplo en esta imagen, el sol tiene posicion absoluta, ya que esta por encima del paisaje, y esta ahí posicionado, gracias a las etiquetas top y left.</p>
+
+		<img id="sol" src="imagenes/sol.png" height="50">
+		<img id="paisaje" src="imagenes/paisaje.jpg" >
+
+		<h3>FIJA</h3>
+		<p>Con esta posición los elementos se sitúan en un sitio fijo de la pantalla, esto quiere decir que aunque hagamos scroll, se va a seguir viendo el elemento.<br>Esto se hace poniendo la propiedad "position", seguido de dos puntos y "fixed". Tambien se puede usar esto combinandolo con top, bottom, rigth, left... <br>
+		Por ejemplo, la imagen del perro, está colocada de manera fija, arriba a la derecha.</p>
+		<img id="fija" src="imagenes/cachorro.jpg" height="115">
+
+		<h3>Z-INDEX</h3>
+		<p>Con esta etiqueta los elementos se superponen por importancia, el creador de la página web puede definir que elementos se pueden superponer, esto se hace con la etiqueta "z-index" seguido de un número.<br> Ese número indica la prioridad de los elementos, los que tengan un número más elevado se van a superponer a los elementos con un número inferior.<br>Por ejemplo de estas tres imagenes, la de los girasoles tiene el número 1, por lo que se la superpone la del rinoceronte que tiene el número 2 y la del león de 3.</p>
+
+		<img id="imagen1" src="imagenes/imagen3.jpg" height="150">
+		<img id="imagen3" src="imagenes/imagen1.jpg" height="150">
+		<img id="imagen2" src="imagenes/imagen2.jpg" height="150">
+				
+		<h2 id="nombre">Laura Romero Pérez</h2>
+	</body>
+</html>
