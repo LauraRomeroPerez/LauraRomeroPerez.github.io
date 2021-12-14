@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title>Más selectores CSS Laura Romero</title>
+		<style>
+			.misma{
+		  background-color:rgb(154, 212, 209)
+			}
+			.etiqueta{
+		  background-color:rgb(85, 189, 99)
+			}
+			.rojo{
+	      background-color:red
+			}
+			p.pocho{
+          color:white
+			}
+			strong.pocho{
+				color:white;
+			}
+			p strong{
+		  background-color:orange;
+			}
+			h5, h6{
+		  color:rgb(30, 97, 82)
+			}
+			h3{
+		  color: salmon;
+			}
+			h4{
+		  color: salmon;
+			}
+			a:hover { 
+          background-color: rgb(209, 109, 209);
+		  color: green
+			}
+			a:focus { 
+		  color: rgb(238, 166, 10);
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Laura Romero Pérez</h2>
+		<p>Actualizado el 14 de diciembre</p>
+
+		<h2>MÁS DE UNA CLASE EN LA MISMA ETIQUETA HTML</h2>
+		<p class="misma">Por ejemplo: Este párrafo <strong class="etiqueta">tiene</strong> el color de fondo azul, mientras que</p>
+		<p class="misma etiqueta">Este párrafo le tiene verde.</p>
+		<p>Esto se ha conseguido asiganando una clase al primer párrafo y a la palabra TIENE, que esta dentro de esa clase, se le ha asignado la mísma que al segundo párrafo.<br>
+		Así todos los elementos que se desea que tengan el mismo estilo, se puede aplicar la misma clase, y sólo a los elementos especificos de esa clase se le aplicará otra clase.</p>
+
+		<h2>COMBINACION DE SELECTORES DE CLASES Y ETIQUETAS</h2>
+		<p>Se usa cuando queremos aplicar un estilo a etiquetas particulares con una clase específica <br>Esto se hace poniendo el elemento, seguido de un punto y SIN espacio y después el nombre de la clase.</p>
+		<p class="rojo">Por ejemplo: Este párrafo tiene el color de fondeo rojo, pero sólo esta <strong class="rojo pocho">PALABRA</strong> tiene el color de la letra blanco.</p>
+
+		<h2>SELECTORES DESCENDIENTES</h2>
+		<p>Se utiliza para aplicar reglas de estilo a elementos muy concretos. Esto se hace poniendo el CSS los elementos seguidos, separados por un espacio, en este caso es "p strong"<br> Por ejemplo:</p>
+		<p>En este párrafo la palabra <strong>HOLA</strong> está escrita en negrita y gracias a los selectores descendientes, esta palabra tiene un color de fondo naranja. </p>
+
+		<h2>SELECCIÓN POR GRUPO</h2>
+		<p>Se utiliza para no tener tantas etiquetas iguales en CSS. Si son los mismos estilos, se pueden poner las etiquetas separadas por una coma.<br>Por ejemplo, los títulos h6 y h5, están agrupados en CSS, y los títulos h4 y h3, tienen el mismo estilo, pero en etiquetas separadas.</p>
+		<h6>Título h6</h6>
+		<h5>Título h5</h5>
+		<h4>Título h4 </h4>
+		<h3>Título h3</h3>
+
+		<h2>PSEUDOCLASES DINÁMICAS</h2>
+		<p>Las pseudo clases sirven para agregar un estilo a un elemento.<br>Por ejemplo, este enlace al index. Al pasar el cursor por encima, la letra se vuelve de color vede y el fondo morado. Y al pulsarle se queda marcado de color naranja.
+		<br>Para cambiar los colores al pasar el cursor por encima, se utiliza "hover" y para que despúes de pulsarle se quede en naranja "focus".</p>
+		<a href="index.html">Vuelve a inicio</a>
+		
+		<h2>Laura Romero Pérez</h2>
+	</body>
+</html>
