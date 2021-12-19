@@ -1,0 +1,25 @@
+strong{
+  background-color: coral;
+  color:white
+}
+
+h2{
+  color:rgb(106, 64, 160)
+}
+
+h3{
+  color:rgb(42, 173, 24)
+}
+
+p{
+  color:brown
+}
+
+#dessubrayar{
+  text-decoration:none;
+}
+
+a:hover { 
+  background-color: rgb(37, 28, 173);
+  color: white
+}
